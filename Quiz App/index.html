@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="btn-start">
+      <button class="btn btn-warning btn-lg">Start Quiz</button>
+    </div>
+    <div class="card quiz-box">
+      <header class="card-header">
+        <div class="title">Quiz App</div>
+        <div class="timer">
+          <div class="time-text me-1">Kalan Süre:</div>
+          <div class="time-second">10</div>
+        </div>
+        <div class="time-line"></div>
+      </header>
+      <section class="card-body">
+        <div class="question-text">
+          <!-- <span>Hangisi bir programlama dili değildir?</span> -->
+        </div>
+        <div class="option-list">
+          <!-- <div class="option">
+            <span>a: PHP</span>
+            <div class="icon"><i class="fas fa-check"></i></div>
+          </div>
+          <div class="option correct">
+            <span>b: HTML</span>
+            <div class="icon"><i class="fas fa-times"></i></div>
+          </div>
+          <div class="option incorrect">
+            <span>c: JavaScript</span>
+            <div class="icon"><i class="fas fa-times"></i></div>
+          </div> -->
+        </div>
+      </section>
+      <footer class="card-footer">
+        <div class="question">
+          <div class="question-index"></div>
+          <button class="next-btn btn btn-success btn-sm">Sonraki Soru</button>
+        </div>
+      </footer>
+    </div>
+    <div class="card score-box">
+      <div class="icon"><i class="fas fa-crown"></i></div>
+      <div class="score-text"></div>
+      <div class="buttons">
+        <button class="btn btn-primary btn-replay">Tekrar Başlat</button>
+        <button class="btn btn-primary btn-quit">Testi Bitir</button>
+      </div>
+    </div>
+    <script src="soru.js"></script>
+    <script src="quiz.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
