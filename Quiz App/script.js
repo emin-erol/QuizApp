@@ -71,6 +71,9 @@ function soruGoster(soru) {
 }
 
 function optionSelected(option) {
+  var element = document.getElementsByClassName("time-line")[0];
+  element.style.animationPlayState = 'paused';
+
   clearInterval(counter);
   clearInterval(counterLine);
   let cevap = option.querySelector("span b").textContent;
@@ -123,6 +126,13 @@ function startTimer(time) {
 
 let counterLine;
 function startTimerLine() {
+
+  var element = document.getElementsByClassName("time-line")[0];
+  element.classList.remove("time-line"); 
+  void element.offsetWidth;             //reflow animation
+  element.classList.add("time-line");
+  element.style.animationPlayState = 'running';  //run animation (we did stop when clicked an option)
+
   let lineWidth = 0;
   counterLine = setInterval(timer, 21);
   function timer() {
