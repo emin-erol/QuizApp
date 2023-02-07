@@ -93,6 +93,7 @@
     background-color: red;
   }
 }
+
 .quiz-box .time-line {
   position: absolute;
   bottom: 0;
@@ -102,8 +103,7 @@
   animation-duration: 13s;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
-  transform-origin: center;
-}
+  transform-origin: center;}
 
 .question {
   display: flex;
